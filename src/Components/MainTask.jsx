@@ -7,13 +7,14 @@ import Accepted from '../pages/Accepted'
 import Failed from '../pages/Failed'
 import Review from '../pages/Review'
 import { UserContext } from "../Context/Context";
+import CreateTask from "../pages/CreateTask";
+import CreateMember from "../pages/CreateMember";
 
 
 const MainTask = () => {
     const newObj = useContext(UserContext)
-    console.log(newObj)
   return (
-    <div className="bg-red-900 p-5 pt-10 h-[55vh]">
+    <div className="pt-10 pb-8 overflow-y-auto">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/newtask" element={<NewTask />} />
@@ -21,6 +22,8 @@ const MainTask = () => {
         <Route path="/completed" element={<Completed />} />
         <Route path="/accepted" element={<Accepted />} />
         <Route path="/failed" element={<Failed />} />
+        <Route path="/createTask" element={<CreateTask />} />
+        <Route path="/createMember" element={<CreateMember />} />
       </Routes>
     </div>
   );

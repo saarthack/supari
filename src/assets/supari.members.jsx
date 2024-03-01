@@ -1,4 +1,4 @@
-[{
+export const membersData =  [{
   "_id": {
     "$oid": "65be260e342b7d28ee708b90"
   },

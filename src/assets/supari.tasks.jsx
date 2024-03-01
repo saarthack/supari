@@ -1,4 +1,4 @@
-[{
+export const supari =  [{
   "_id": {
     "$oid": "65be665a9e45c8fbf9efc007"
   },

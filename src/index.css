@@ -3,10 +3,20 @@
 @tailwind utilities;
 
 body {
-    background-color: rgb(15, 15, 15);
+    background-color:#1c1c1c;
     color: #fff;
 }
 
 .no-scrollbar::-webkit-scrollbar{
+    display: none;
+}
+
+
+.selected{
+    /* display: block; */
+    /* background-color: red; */
+    /* margin-top: 0; */
+}
+.gayab{
     display: none;
 }

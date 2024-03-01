@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
+import { UserContext } from '../Context/Context'
+import RenderTask from '../Components/RenderTask'
+import TaskData from '../Components/TaskData'
+import Links from '../Components/Links'
+
 
 const Review = () => {
+  const [data,setData] = useContext(UserContext)
+  const filteredData = data.filter(function(elem){
+
+    return elem.status == 'review'
+  })
+  // console.log(filteredData)
   return (
-    <div>Review</div>
+    <div>
+      <TaskData />
+      <Links />
+      <RenderTask data={filteredData} />
+    </div>
   )
 }
 
